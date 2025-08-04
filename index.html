@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How I make money online, Make 300k weekly at home with phone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #4d004d;
+      padding: 1em;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 95%;
+      z-index: 1000;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .menu-toggle {
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 1em;
+      background-color: #fff;
+      color: #4d004d;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .dropdown a {
+      display: block;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      color: #4d004d;
+    }
+    .dropdown a:hover {
+      background-color: #f0f0f0;
+    }
+    .container {
+      padding: 1em;
+    }
+    .hero-image {
+      width: 100%;
+      background-color: #dcdcdc;
+      text-align: center;
+      padding-top: 4em;
+    }
+    .product-title {
+      font-size: 1.5em;
+      margin-top: 0.5em;
+    }
+    .card {
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 1em;
+      margin-top: 2em;
+    }
+
+    .disclaimer {
+      color: #990000;
+      font-style: italic;
+    }
+
+    .highlight {
+      color: green;
+      font-weight: bold;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 0.3em;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .submit-btn {
+      background-color: #4d004d;
+      color: white;
+      border: none;
+      padding: 0.7em 1.5em;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 4px;
+      align-items: center;
+    }
+    .submit-btn:hover {
+      background-color: #3a003a;
+    }
+
+    .forbtn {
+      text-align: center;
+    }
+    .review-section {
+      text-align: center;
+      margin-top: 2em;
+    }
+    .review-score {
+      font-size: 2em;
+    }
+    .stars {
+      color: gold;
+      font-size: 1.5em;
+    }
+    .chat-popup-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1em;
+      min-height: 60px;
+    }
+    .chat-popup {
+      display: none;
+      align-items: center;
+      background: #e6e6e6;
+      border-radius: 10px;
+      padding: 1em;
+      margin: 0 auto;
+      width: fit-content;
+      max-width: 90%;
+      transform: translateX(-100%);
+      animation: slideIn 0.5s forwards;
+    }
+    .chat-popup.slide-out {
+      animation: slideOut 0.5s forwards;
+    }
+    .chat-popup img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 0.8em;
+    }
+    /*.heroo-image {
+     text-align: center;
+     padding: 1em;
+     }
+
+    .heroo-image img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+    }*/
+    /*Footer popup*/
+    .popup {
+      position: fixed;
+      bottom: -100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 1rem;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+      width: 90%;
+      height:100px;
+      max-width: 100%;
+      text-align: center;
+      transition: bottom 0.5s ease;
+    }
+    .popup.show {
+      bottom: 0;
+    }
+    .countdown {
+      color: #e60000;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Video Section */
+    .video-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .video-container video {
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+/* ✅ Make all images responsive */
+img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5%;
+    }
+
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+        display: flex;
+      }
+    }
+    @keyframes slideOut {
+      to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+   }
+
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+        display: flex;
+      }
+    }
+    @keyframes slideOut {
+      to {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+    .footer {
+      background-color: #4d004d;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Make Money Online</h1>
+    <div class="menu-toggle" onclick="toggleDropdown()">☰</div>
+    <div class="dropdown" id="dropdownMenu">
+      <a href="#">Register</a>
+      <a href="#">Login</a>
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <div class="card">
+        <img src="Vid.jpg" alt="Coach Lillian" >
+            <div class="product-title">LEARN WAYS TO EARN MONEY ONLINE</div>
+        <div class="price-section">
+           1:30:00
+            <br>
+            <button class="closed-btn">Class Duration</button>
+          </div>
+    
+          <div class="details-section">
+            <p><strong>Others are keeping this as a secret. Just agree to pay me 10% of what you’ll earn monthly from this, and I will show you the following:</strong></p>
+            <p>• How to earn ₦100k to ₦400k weekly</p>
+            <p>• The secret to getting 100 contacts daily</p>
+            <p>• How to get 20 or more people to buy from you every day</p>
+            <p>• What to sell online and earn ₦10k profit per sale—and how to get buyers to message you without chasing them</p>
+            <p>• How to receive alerts for legit money-making opportunities and start before others</p>
+            <p>• How to automatically save contacts and reply to customer messages without touching your phone</p>
+            <p>• How to get sales without running ads</p>
+
+            <p class="highlight">If you’re willing to give me just 10% of what you earn every month, I’ll teach you how to set up your online shop and start making millions like me.</p>
+            <p class="disclaimer">I’m doing this for that 10%—I’m not running a charity.</p>
+
+            <div class="forbtn">
+              <p>Don’t miss my ongoing class. Click the “Join Now” button below to join, learn, and earn.</p>
+              <a href="LillianPayment.html"><button class="submit-btn">Join <span class="green">Now</span></button></a>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    
+
+    <div class="card review-section">
+      <h2>Customer Reviews</h2>
+      <div class="review-score" id="score">2.00</div>
+      <div class="stars" id="stars">★★☆☆☆</div>
+    </div>
+
+    <div class="chat-popup-container">
+      <div class="chat-popup" id="chat">
+        <img src="R2.png" alt="User Profile">
+        <span id="chat-message">Hello</span>
+      </div>
+    </div>
+
+    <div class="card">
+        <img src="Vid2.jpg" alt="CapCut Pro Box" >
+            <div class="product-title">COACH LILLIAN - HOW I WENT FROM EARNING 20K TO EARNING 1 MILLION MONTHLY</div>
+        <div class="price-section">
+            1:30:00
+            <br>
+            <button class="closed-btn">Ongoing Class Duration</button>
+          </div>
+    
+          <div class="details-section">
+  <p><strong>HOW THIS BUSINESS CHANGED MY LIFE FINANCIALLY — AND THE LIVES OF PEOPLE WHO LEARN FROM ME</strong></p>
+  <p><span class="disclaimer">Even if you already have a job, it’s time to have a second source of income.</span> And if you think you’re too poor to succeed, let me share my true story.</p>
+  <p>Before I started this business, I was so broke that I had never seen a 30k credit alert. I once worked for someone from 8 a.m. to 9 p.m. every day and earned just 20k monthly. After three years, I asked him to increase my salary to 30k—and he sacked me. I was helpless. My parents weren’t rich either.</p>
+  <p>People called me jobless. I couldn’t afford the things I needed. Children and my age mates disrespected me. People I was smarter than in school started making money. I wouldn’t wish what I went through on anyone. <span class="disclaimer">That’s why I always tell people to grab any opportunity to make money. A poor person has no choice, and a rich person is above the law. Don’t wait until things get worse before you find a way to earn.<span></span></p>
+  <p>Now back to my story. I borrowed money from a friend to start something, but after hearing my story, she introduced me to this business that changed my life.</p>
+  <p>She had a digital product that over 300 million people truly need and are willing to buy. She pays me 50% for every sale I make.</p>
+  <p>This product is only available online, and I sell it with just my phone from anywhere. People message me every day asking to buy.</p>
+  <p><span class="highlight">Today alone, I’ve sold 12 of those products and earned ₦10,000 per sale:</span></p>
+  <p>₦10,000 × 12 = ₦120,000.</p>
+  <p>Yes—I made ₦120,000 today. And the best part? I did it from home and still have time to go out and enjoy life.</p>
+  <p><span class="highlight">Before the month ends, I will earn up to ₦3 million—just with my phone.</span> I also earn 10% loyalty from everyone I teach how to do this business.</p>
+  <p>If you’re willing to give me just 10% of what you earn every month, I’ll teach you how to set up your online shop and start making millions like me. I’m doing this for that 10%—I’m not running a charity.</p>
+  <p class="highlight">Here’s what you need to start:<br>
+  • A phone or PC (either one)<br>
+  • Browsing data<br>
+  • Just 4 hours of your time daily<br>
+  • An online shop (I’ll show you how to get it)</p>
+
+  <div class="forbtn">
+    <p class="disclaimer">Don’t miss my ongoing class. Click the “Join Now” button below to join, learn, and earn.</p>
+    <a href="LillianPayment.html"><button class="submit-btn">Join <span class="green">Now</span></button></a>
+  </div>
+</div>
+
+    </div>
+
+    
+
+    
+
+    <div class="card review-section">
+      <h2>Customer Reviews</h2>
+      <div class="review-score" id="score">2.00</div>
+      <div class="stars" id="stars">★★☆☆☆</div>
+    </div>
+
+    <div class="chat-popup-container">
+      <div class="chat-popup" id="chat">
+        <img src="https://via.placeholder.com/40" alt="User Profile">
+        <span id="chat-message">Hello</span>
+      </div>
+    </div>
+
+    <h1 class="forbtn">TESTIMONIES BY MEMBERS</h1>
+
+    <div class="card">
+        
+            <img src="T1.jpg" alt="CapCut Pro Box" >
+            <div class="product-title">NO ONE BELIEVED SOMEONE LIKE THIS CAN EARN UPTO 50K</div>
+       
+        <div class="price-section">
+            5 months 3 days
+            <br>
+            <button class="closed-btn">years/months of experience</button>
+          </div>
+    
+          <div class="details-section">
+            <img src="T2.jpg" alt="CapCut Pro Box" >
+            <div class="product-title">IF YOU START NOW YOU WILL MAKE MORE MONEY</div>
+            <p><strong>MONEY CAN SOLVE 90% OF YOUR PROBLEM</strong></p>
+             <img src="T3.jpg" alt="CapCut Pro Box" >
+            <div class="forbtn">
+              <p>Don’t miss my ongoing class. Click the “Join Now” button below to join, learn, and earn.</p>
+            <a href="LillianPayment.html"><button class="submit-btn">Join <span class="green">Now</span></button></a>
+            </div>
+          </div>
+    </div>
+
+    <div class="card">
+        
+            <img src="T4.jpg" alt="CapCut Pro Box">
+            <div class="product-title">YOUNG BUT MAKING IT</div>
+          
+        <div class="price-section">
+            2 months only 
+            <br>
+            <button class="closed-btn">Years/Months of experience</button>
+          </div>
+    
+          <div class="details-section">
+            <img src="T5.jpg" alt="CapCut Pro Box" >
+            <div class="product-title">.</div>
+             <img src="T6.jpg" alt="CapCut Pro Box" >
+            <div class="forbtn">
+              <p>Don’t miss my ongoing class. Click the “Join Now” button below to join, learn, and earn.</p>
+            <a href="LillianPayment.html"><button class="submit-btn">Join <span class="green">Now</span></button></a>
+            </div>
+          </div>
+    </div>
+
+    <div class="card">
+            <img src="T7.jpg" alt="CapCut Pro Box" >
+            <div class="product-title"></div>
+        <div class="price-section">
+            Less than a month 
+            <br>
+            <button class="closed-btn">Year/month of experience</button>
+          </div>
+    
+          <div class="details-section">
+            <img src="T8.jpg" alt="CapCut Pro Box" >
+            <div class="product-title">ANOTHER STUDENT- CURRENTLY EARNING 6 MILLION MONTHLY</div>
+            
+             <img src="T9.jpg" alt="CapCut Pro Box" >
+            <div class="product-title">MY STUTENT WHO CURRENTLY EARNS 4 MILLION MONTHLY</div>
+            <div class="forbtn">
+              <p>Don’t miss my ongoing class. Click the “Join Now” button below to join, learn, and earn.</p>
+            <a href="LillianPayment.html"><button class="submit-btn">Join <span class="green">Now</span></button></a>
+            </div>
+          </div>
+    </div>
+  </div>
+
+
+  <!--footer popup-->
+  <div class="popup" id="popup">
+    <p>Our Ongoing Class Will End Soon: <span class="countdown" id="countdown">00:100</span></p>
+    <a href="LillianPayment.html"><button class="submit-btn">Learn How To Make Money Online <span class="green">Now</span></button></a>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Make Money Online. All Rights Reserved.
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Animate review score from 2 to 5
+    let reviewScore = 2;
+    let interval = setInterval(() => {
+      if (reviewScore < 5) {
+        reviewScore++;
+        document.getElementById("score").textContent = reviewScore.toFixed(2);
+        document.getElementById("stars").textContent = '★'.repeat(reviewScore) + '☆'.repeat(5 - reviewScore);
+      } else {
+        clearInterval(interval);
+      }
+    }, 4000);
+
+    // Rotating chat popups
+    const messages = [
+      "God bless you!",
+      "How do I start immediately?",
+      "I have joined your class,I got 4 sales today💰😋",
+    ];
+    let index = 0;
+    const chat = document.getElementById('chat');
+    const messageEl = document.getElementById('chat-message');
+
+    function showNextChat() {
+      chat.classList.remove('slide-out');
+      chat.style.display = 'flex';
+      messageEl.textContent = messages[index];
+      setTimeout(() => {
+        chat.classList.add('slide-out');
+        setTimeout(() => {
+          chat.style.display = 'none';
+          index = (index + 1) % messages.length;
+        }, 500);
+      }, 4000);
+    }
+    showNextChat();
+    setInterval(showNextChat, 8000);
+
+    //Footer popup
+    window.onload = function () {
+      setTimeout(() => {
+        document.getElementById('popup').classList.add('show');
+        startCountdown(1100);
+      }, 1000);
+    };
+
+    function startCountdown(seconds) {
+      const countdownEl = document.getElementById("countdown");
+      let counter = seconds;
+      const interval = setInterval(() => {
+        countdownEl.textContent = `00:${counter < 10 ? '0' + counter : counter}`;
+        counter--;
+        if (counter < 0) clearInterval(interval);
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
